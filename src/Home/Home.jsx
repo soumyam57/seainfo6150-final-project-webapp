@@ -1,14 +1,16 @@
 import React from 'react'
-import Form from "../Form/Form";
-import treefrog from "../images/treefrog.jpg";
+import styles from "./Home.module.css";
+import GiftCategories from "../GiftCategories/GiftCategories.jsx"
+import FeaturedGifts from "../FeaturedGifts/FeaturedGifts.jsx";
+import Header from "../Header/Header.jsx";
 
 const Home = () => {
+
     return (
-        <div>
-            The home page
-            <h1>I changed this homepage</h1>
-            <img src={treefrog} alt="tree frog" />
-            <Form />
+        <div className={styles.homepage}>
+            <GiftCategories/>
+            <FeaturedGifts/> 
+            <Header/>      
         </div>
     )
 }

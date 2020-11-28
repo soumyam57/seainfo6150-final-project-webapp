@@ -1,69 +1,129 @@
-import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
-
-import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
-import Error from "./Error/Error.jsx";
+import React, {useEffect, useState}  from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from './Home/Home';
+import styles from "./App.module.css";
+import { isEmpty } from "lodash";
+import ContactUs from "./ContactUs/ContactUs.jsx";
+import GiftItemsList from "./GiftItemsList/GiftItemsList";
+import GiftItemDetail from "./GiftItemDetail/GiftItemDetail";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
-const externalContent = {
+/*const externalContent = {
   id: "article-1",
   title: "An Article",
   author: "April Bingham",
   text: "Some text in the article",
-};
+};*/
 
 function App() {
+
+  const [fetchedData, setFetchedData] = useState({});
+
+  useEffect(() => {
+    const fetchData = async () => {
+      // put data fetching code here!
+        const response = await fetch( 
+          "http://demo5934733.mockable.io/"
+        );
+        const responseJson = await response.json();
+          console.log("Response",responseJson);
+        setFetchedData(responseJson);
+    };
+
+    if (isEmpty(fetchedData)) {
+      fetchData();
+    }
+  }, [fetchedData]);
+
+  let displayWeddingItemsList;
+  let displayKidsItemsList;
+  let displayBirthdayItemsList;
+  let displayGetwellItemList;
+  let displayFestivalItemsList;
+
+  let displayWeddingItemDetail;
+
+  if(!isEmpty(fetchedData)){
+    var weddingCategory = Object.values(fetchedData.wedding)
+    var kidsCategory = Object.values(fetchedData.kids)
+    var festivalCategory = Object.values(fetchedData.festival)
+    var getwellCategory =  Object.values(fetchedData.getwell)
+    var birthdayCategory =  Object.values(fetchedData.birthday)
+
+    displayWeddingItemsList = (
+      <GiftItemsList giftItemList={weddingCategory} pagetitle="Wedding & Party"/>
+    )
+
+    displayWeddingItemDetail = (
+      <GiftItemDetail giftItemDetail={weddingCategory[1].id} pagetitle={weddingCategory[1].id}/>
+    )
+
+
+    displayKidsItemsList = (
+      <GiftItemsList giftItemList={kidsCategory} pagetitle="Kids"/>
+    )
+    displayBirthdayItemsList = (
+      <GiftItemsList giftItemList={festivalCategory} pagetitle="Holidays & Festivals"/>
+    )
+    displayGetwellItemList = (
+      <GiftItemsList giftItemList={getwellCategory} pagetitle="Get Well Soon"/>
+    )
+    displayFestivalItemsList = (
+      <GiftItemsList giftItemList={birthdayCategory} pagetitle="Birthday"/>
+    )
+
+  }
+  else{
+    displayWeddingItemsList=<div>You have no data!</div>;
+  }
+
   return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+    <Router>
+      <div className={styles.homepage}>
+        <h1 align = "center" className={styles.title}>Welcome to our Home of Gifts</h1> 
+        <div className={styles.container}>
+          <a className={styles.menuitem} href="/"> Home </a>
+          <a className={styles.menuitem} > Categories </a> 
+          <a className={styles.menuitem} > About Us </a>   
+          <a className={styles.menuitem} href="/ContactUs/ContactUs"> Contact Us </a>  
+        </div>   
+      </div>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
-        {/* passing parameters via a route path */}
         <Route
-          path="/bar/:categoryId/:productId"
+          path="/wedding"
           exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
+          render={() => displayWeddingItemsList}
         />
         <Route
-          path="/baz"
+          path="/wedding/:item"
           exact
-          render={() => <Baz content={externalContent} />}
+          render={() => displayWeddingItemDetail}
         />
-        <Route component={Error} />
+        <Route
+          path="/kids"
+          exact
+          render={() => displayKidsItemsList}
+        />
+        <Route
+          path="/birthday"
+          exact
+          render={() => displayBirthdayItemsList}
+        />
+        <Route
+          path="/festival"
+          exact
+          render={() => displayFestivalItemsList}
+        />
+        <Route
+          path="/getwell"
+          exact
+          render={() => displayGetwellItemList}
+        />
+        <Route path="/ContactUs/ContactUs" exact component={ContactUs} />
       </Switch>
-    </>
+    </Router> 
   );
 }
 

@@ -1,0 +1,32 @@
+.link{
+    display: inline-block;
+    padding: 20px 0px 0px 50px;
+}
+
+.footer {
+    color: white;
+    text-decoration-color: maroon;
+    text-align: start;
+}
+
+@media screen and (min-width: 525px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
