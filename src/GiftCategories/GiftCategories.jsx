@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 //http://demo5934733.mockable.io/
 
 const GiftCategories = () => {
-
     return(
             <div className={styles.container}>
                 <div className={styles.flex}>

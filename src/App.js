@@ -6,6 +6,7 @@ import { isEmpty } from "lodash";
 import ContactUs from "./ContactUs/ContactUs.jsx";
 import GiftItemsList from "./GiftItemsList/GiftItemsList";
 import GiftItemDetail from "./GiftItemDetail/GiftItemDetail";
+import ThemeHeader from "./ThemeHeader/ThemeHeader.jsx";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -27,7 +28,7 @@ function App() {
           "http://demo5934733.mockable.io/"
         );
         const responseJson = await response.json();
-          console.log("Response",responseJson);
+          //console.log("Response",responseJson);
         setFetchedData(responseJson);
     };
 
@@ -52,25 +53,19 @@ function App() {
     var birthdayCategory =  Object.values(fetchedData.birthday)
 
     displayWeddingItemsList = (
-      <GiftItemsList giftItemList={weddingCategory} pagetitle="Wedding & Party"/>
+      <GiftItemsList giftItemList={weddingCategory} pagetitle="Wedding & Party"/>      
     )
-
-    displayWeddingItemDetail = (
-      <GiftItemDetail giftItemDetail={weddingCategory[1].id} pagetitle={weddingCategory[1].id}/>
-    )
-
-
     displayKidsItemsList = (
       <GiftItemsList giftItemList={kidsCategory} pagetitle="Kids"/>
     )
     displayBirthdayItemsList = (
-      <GiftItemsList giftItemList={festivalCategory} pagetitle="Holidays & Festivals"/>
+      <GiftItemsList giftItemList={birthdayCategory} pagetitle="Birthday"/>
     )
     displayGetwellItemList = (
       <GiftItemsList giftItemList={getwellCategory} pagetitle="Get Well Soon"/>
     )
     displayFestivalItemsList = (
-      <GiftItemsList giftItemList={birthdayCategory} pagetitle="Birthday"/>
+      <GiftItemsList giftItemList={festivalCategory} pagetitle="Holidays & Festivals"/>
     )
 
   }
@@ -79,27 +74,14 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className={styles.homepage}>
-        <h1 align = "center" className={styles.title}>Welcome to our Home of Gifts</h1> 
-        <div className={styles.container}>
-          <a className={styles.menuitem} href="/"> Home </a>
-          <a className={styles.menuitem} > Categories </a> 
-          <a className={styles.menuitem} > About Us </a>   
-          <a className={styles.menuitem} href="/ContactUs/ContactUs"> Contact Us </a>  
-        </div>   
-      </div>
+    <>
+      <ThemeHeader/>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route
           path="/wedding"
           exact
           render={() => displayWeddingItemsList}
-        />
-        <Route
-          path="/wedding/:item"
-          exact
-          render={() => displayWeddingItemDetail}
         />
         <Route
           path="/kids"
@@ -121,9 +103,21 @@ function App() {
           exact
           render={() => displayGetwellItemList}
         />
+        <Route
+          path="/:category/:categoryid"
+          exact
+          render={({ match }) => (
+            // getting the parameters from the url and passing
+            // down to the component as props
+            <GiftItemDetail className={styles.homepage}
+              categoryid={match.params.categoryid}
+              category={match.params.category}
+            />
+          )}
+        />
         <Route path="/ContactUs/ContactUs" exact component={ContactUs} />
       </Switch>
-    </Router> 
+    </> 
   );
 }
 

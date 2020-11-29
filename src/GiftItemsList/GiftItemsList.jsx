@@ -11,7 +11,7 @@ const GiftItemsList = props => {
         <h1 className={styles.title}>{props.pagetitle}</h1>
         <div className={styles.container}>
               {props.giftItemList.map((giftItem) => (
-                  <Link className={styles.link} to={'/'+'wedding'}>
+                  <Link className={styles.link} to={'/'+giftItem.category+'/'+giftItem.categoryid}>
                     <GiftItem giftItem={giftItem}/>
                   </Link>
               ))}

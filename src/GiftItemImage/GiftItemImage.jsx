@@ -7,12 +7,13 @@ import { Link } from "react-router-dom";
 const GiftItemImage = (props) => {
   return (
     <div className={styles.flex}>
-    <p className={styles.text}>{props.title}</p> 
-    <img className={styles.image} 
-        src={props.url} alt="">
-    </img>
-    <p className={styles.text}>Price: {props.price}</p> 
+      <p className={styles.text}>{props.title}</p> 
+      <img className={styles.image} 
+          src={props.url} alt="">
+      </img>
+      <p className={styles.text}>Price: {props.price}</p> 
     </div>
+    
   );
 };
 

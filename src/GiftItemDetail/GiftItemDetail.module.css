@@ -1,0 +1,12 @@
+.mainpage{ 
+    background-image: linear-gradient(to right,rgb(83, 15, 15), rgb(49, 12, 25) 70%);
+    padding: 5px 10px 50px 5px;
+}
+
+.title{
+    background-color: maroon;
+    color:white;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}

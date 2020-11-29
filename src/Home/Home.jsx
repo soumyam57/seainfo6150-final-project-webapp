@@ -5,7 +5,6 @@ import FeaturedGifts from "../FeaturedGifts/FeaturedGifts.jsx";
 import Header from "../Header/Header.jsx";
 
 const Home = () => {
-
     return (
         <div className={styles.homepage}>
             <GiftCategories/>
