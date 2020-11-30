@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const GiftItemsList = props => {
 
   return (
-    <div className={styles.div}>
+    <div>
         <h1 className={styles.title}>{props.pagetitle}</h1>
         <div className={styles.container}>
               {props.giftItemList.map((giftItem) => (

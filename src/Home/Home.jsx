@@ -8,8 +8,7 @@ const Home = () => {
     return (
         <div className={styles.homepage}>
             <GiftCategories/>
-            <FeaturedGifts/> 
-            <Header/>      
+            <FeaturedGifts/>    
         </div>
     )
 }

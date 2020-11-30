@@ -16,7 +16,7 @@ const GiftCategories = () => {
                     <img className={styles.image} src={wedding} alt=""/>
                     <p className={styles.text}>   
                         <Link className={styles.text} to='/wedding'>
-                            Wedding
+                            Wedding & Party
                         </Link>
                     </p> 
                 </div>

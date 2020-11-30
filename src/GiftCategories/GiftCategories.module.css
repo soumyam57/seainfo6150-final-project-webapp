@@ -45,7 +45,7 @@
 .text {
   padding: 20px 0px 10px 0px;
     justify-content: center;
-    color: gainsboro;
+    color:  rgb(243, 222, 222);
     font-style: italic;
     font-weight: bolder;
     text-transform: capitalize;
@@ -53,7 +53,7 @@
 }
 
 .title {
-    background-color: gainsboro;
+    background-color:  rgb(243, 222, 222);
     padding: 10px 50px;
     color: maroon;
     font-style: italic;

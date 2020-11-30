@@ -1,7 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import { isEmpty } from "lodash";
 import PropTypes from "prop-types";
-import styles from "./GiftItemDetail.module.css"
+import styles from "./GiftItemDetail.module.css";
+import Form from '../Form/Form';
+import GiftDetailCoverImage from '../GiftDetailCoverImage/GiftDetailCoverImage.jsx';
+import GiftDetailDescription from '../GiftDetailDescription/GiftDetailDescription.jsx'
+ 
+//<img src={gift.img.url} alt=""/>
 
 const GiftItemDetail = (props) => {
     const [fetchedData, setFetchedData] = useState({});
@@ -27,14 +32,22 @@ const GiftItemDetail = (props) => {
         console.log("display=",gift)
         displayContent = (
         <div className={styles.mainpage}>
-            <h1>{props.category}</h1>
-            <div>
-                <p>{gift.title}</p>
-                <p>Short Description: {gift.shortDesc}</p>
-                <p>Price: {gift.price}</p>
-                <p>Status: {gift.status}</p>
-                <p>Description: {gift.description}</p>
-                <img src={gift.img.url} alt=""/>
+            <h1 className={styles.text}>{gift.title}</h1>
+            <div className={styles.container}>
+                <div className={styles.flex}>
+                    <div className={styles.flexitems}>
+                        <GiftDetailCoverImage url={gift.img.url}/>
+                    </div>
+                    <div className={styles.flexitems}>
+                        <GiftDetailDescription detail={gift}/>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.gap}></div>
+            <div className={styles.form}>
+                <h2 className={styles.text}>Ready to place your order? 
+                Please provide your shipping details below</h2>
+                <Form className={styles.formdetails}/>
             </div>
         </div>
         )

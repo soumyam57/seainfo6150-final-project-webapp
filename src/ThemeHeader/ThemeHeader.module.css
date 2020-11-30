@@ -4,14 +4,9 @@
 
 .flex{
     background-image: linear-gradient(to right,rgb(83, 15, 15), rgb(49, 12, 25) 70%);
+    flex-direction: row;
+    align-items: center;
 }
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  background-color:  rgb(179, 148, 148);
-}
-
 
 .title {
     padding: 2%;
@@ -20,6 +15,30 @@
     font-weight: bold;
     text-transform: uppercase;
     color: gainsboro;
+}
+
+.dropdown {
+  color: rgb(83, 15, 15);
+  font-weight: bolder;
+  text-align: center;  
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  position: relative;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  color: rgb(83, 15, 15);
+  font-weight: bolder;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+
+.container a:hover,.dropdown:hover .dropbtn {
+  background-color:  rgb(179, 148, 148);
+  color:rgb(160, 27, 27);
 }
 
 .container { 
@@ -58,3 +77,4 @@
     text-align: center;
     text-decoration-line: none;
 }
+
