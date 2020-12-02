@@ -1,5 +1,5 @@
 import React, {useEffect, useState}  from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, HashRouter } from "react-router-dom";
 import Home from './Home/Home';
 import styles from "./App.module.css";
 import { isEmpty } from "lodash";
@@ -76,7 +76,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <HashRouter>
       <Header/>
       <Switch>
         <Route path="/" exact component={Home} />
@@ -123,7 +123,7 @@ function App() {
         <Route component={Error} />
       </Switch>
       <Footer/>
-      </Router> 
+      </HashRouter> 
   );
 }
 
