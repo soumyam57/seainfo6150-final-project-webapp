@@ -28,7 +28,6 @@ const GiftCategories = () => {
                             Holidays & Festival
                         </Link>
                     </p>
-                    
                 </div>
                 
                 <div className={styles.flex}>

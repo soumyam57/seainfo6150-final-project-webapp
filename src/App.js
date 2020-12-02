@@ -76,7 +76,7 @@ function App() {
   }
 
   return (
-    <>
+    <Router>
       <Header/>
       <Switch>
         <Route path="/" exact component={Home} />
@@ -123,7 +123,7 @@ function App() {
         <Route component={Error} />
       </Switch>
       <Footer/>
-    </> 
+      </Router> 
   );
 }
 
