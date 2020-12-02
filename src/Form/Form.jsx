@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import styles from "./Form.module.css";
+import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 const Form = () => {
   const [submittedForm, setSubmittedForm] = useState();
+  const { handleSubmit, register, errors } = useForm();
   function onSubmit(e) {
     e.preventDefault();
     const data = new FormData(e.target);
@@ -24,28 +27,31 @@ const Form = () => {
             Shipping Address Line 2: <b>{submittedForm.get("myAddressLine2")}</b>.<br />
             City of the Shipping Address: <b>{submittedForm.get("myCity")}</b>.<br />
             State of the Shipping Address:<b>{submittedForm.get("myState")}</b>.<br />
+            
+            <Link to="/thankyou"> 
             <button type="button">Submit</button><br /><br />
+            </Link>
           </div>
         ) : (
          <div className={styles.formdetails}>
             <form onSubmit={onSubmit} className={styles.text}>
-            <br /><label htmlFor="name">Your First Name: </label>
-            <input className={styles.space} type="text" name="myFirstName" id="myFirstName" required/><br /><br />
+            <br /><label htmlFor="name">Your First Name: </label><br />
+            <input  className={styles.space} type="text" name="myFirstName" id="myFirstName" required/><br /><br />
 
-            <label htmlFor="myTextId">Your Last Name:  </label>
+            <label htmlFor="myTextId">Your Last Name:  </label><br />
             <input className={styles.space} type="text" name="myLastName" id="myLastName" required/><br /><br />
 
-            <label htmlFor="myTextId">Your Email ID :  </label>
-            <input className={styles.space} type="text" name="myEmailID" id="myEmailID" required placeholder="soumya@gmail.com"/><br /><br />
+            <label htmlFor="myTextId">Your Email ID :  </label><br />
+            <input className={styles.space} type="email" name="myEmailID" id="myEmailID" placeholder="sou@example.com" required/><br /><br />
 
-            <label htmlFor="myTextId">Your Phone No : </label>
-            <input className={styles.space} type="text" name="myPhone" id="myPhone" required/><br /><br />
+            <label htmlFor="myTextId">Your Phone No : </label><br />
+            <input className={styles.space} type="tel" name="myPhone" id="myPhone" minLength="9" maxlength="10" required/><br /><br />
 
             <label htmlFor="myTextId">Address Line 1 (required, 500 characters max): </label>
-            <input  type="text" name="myAddressLine1" id="myAddressLine1" className={styles.details} required/><br /><br />
+            <input  type="text" name="myAddressLine1" id="myAddressLine1" className={styles.details} maxlength="500" required/><br /><br />
 
             <label htmlFor="myTextId">Address Line 2 (500 characters max): </label>
-            <input type="text" name="myAddressLine2" id="myAddressLine2" className={styles.details}/><br /><br />
+            <input type="text" name="myAddressLine2" id="myAddressLine2" className={styles.details} maxlength="500"/><br /><br />
 
             <label htmlFor="myTextId">City where the address is located :  </label>
             <select className={styles.dropdown} name="myCity" id="myCity">

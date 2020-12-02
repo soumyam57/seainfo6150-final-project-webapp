@@ -45,7 +45,7 @@ const GiftItemDetail = (props) => {
             </div>
             <div className={styles.gap}></div>
             <div className={styles.form}>
-                <h2 className={styles.text}>Ready to place your order? 
+                <h2 className={styles.text}>Love this item? 
                 Please provide your shipping details below</h2>
                 <Form className={styles.formdetails}/>
             </div>

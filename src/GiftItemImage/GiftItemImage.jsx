@@ -6,12 +6,10 @@ import { Link } from "react-router-dom";
 
 const GiftItemImage = (props) => {
   return (
-    <div className={styles.flex}>
-      <p className={styles.text}>{props.title}</p> 
+    <div >
       <img className={styles.image} 
           src={props.url} alt="">
       </img>
-      <p className={styles.text}>Price: {props.price}</p> 
     </div>
     
   );
@@ -19,7 +17,5 @@ const GiftItemImage = (props) => {
 
 GiftItemImage.propTypes = {
   url: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
 };
 export default GiftItemImage;

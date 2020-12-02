@@ -7,15 +7,16 @@ import { Link } from "react-router-dom";
 const GiftItemsList = props => {
 
   return (
-    <div>
-        <h1 className={styles.title}>{props.pagetitle}</h1>
-        <div className={styles.container}>
+    <div className={styles.flexContainer}>
+        <ul className={styles.container}>
               {props.giftItemList.map((giftItem) => (
-                  <Link className={styles.link} to={'/'+giftItem.category+'/'+giftItem.categoryid}>
-                    <GiftItem giftItem={giftItem}/>
-                  </Link>
+                  <li>
+                    <Link className={styles.link} to={'/'+giftItem.category+'/'+giftItem.categoryid}>
+                      <GiftItem giftItem={giftItem}/>
+                    </Link>
+                  </li>
               ))}
-        </div>
+        </ul>
     </div>
   );
 };

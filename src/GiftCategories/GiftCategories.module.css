@@ -33,6 +33,10 @@
     flex-direction: column;  
 }
 
+.flex a:hover {
+  color:rgb(160, 27, 27);
+}
+
 .image{
     padding: 10px;
     width:60%;
@@ -46,17 +50,17 @@
   padding: 20px 0px 10px 0px;
     justify-content: center;
     color:  rgb(243, 222, 222);
-    font-style: italic;
-    font-weight: bolder;
     text-transform: capitalize;
     text-decoration-line: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: lighter;
 }
 
 .title {
     background-color:  rgb(243, 222, 222);
     padding: 10px 50px;
     color: maroon;
-    font-style: italic;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Space Grotesk', sans-serif;
 }

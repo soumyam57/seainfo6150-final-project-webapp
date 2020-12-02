@@ -3,10 +3,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from './Home/Home';
 import styles from "./App.module.css";
 import { isEmpty } from "lodash";
-import ContactUs from "./ContactUs/ContactUs.jsx";
+import Feedback from "./Feedback/Feedback.jsx";
+import Aboutme from "./Aboutme/Aboutme.jsx";
 import GiftItemsList from "./GiftItemsList/GiftItemsList";
 import GiftItemDetail from "./GiftItemDetail/GiftItemDetail";
-import ThemeHeader from "./ThemeHeader/ThemeHeader.jsx";
+import Header from "./Header/Header.jsx";
+import Thankyou from "./Thankyou/Thankyou.jsx";
+import Error from "./Error/Error.jsx";
+import Footer from "./Footer/Footer.jsx";
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -43,8 +47,6 @@ function App() {
   let displayGetwellItemList;
   let displayFestivalItemsList;
 
-  let displayWeddingItemDetail;
-
   if(!isEmpty(fetchedData)){
     var weddingCategory = Object.values(fetchedData.wedding)
     var kidsCategory = Object.values(fetchedData.kids)
@@ -75,7 +77,7 @@ function App() {
 
   return (
     <>
-      <ThemeHeader/>
+      <Header/>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route
@@ -115,8 +117,12 @@ function App() {
             />
           )}
         />
-        <Route path="/ContactUs/ContactUs" exact component={ContactUs} />
+        <Route path="/aboutme" exact component={Aboutme} />
+        <Route path="/feedback" exact component={Feedback} />
+        <Route path="/thankyou" exact component={Thankyou} />
+        <Route component={Error} />
       </Switch>
+      <Footer/>
     </> 
   );
 }
