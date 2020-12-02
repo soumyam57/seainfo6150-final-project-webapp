@@ -8,6 +8,7 @@ const GiftItemsList = props => {
 
   return (
     <div className={styles.flexContainer}>
+      <h1 className={styles.title}>{props.pagetitle}</h1>
         <ul className={styles.container}>
               {props.giftItemList.map((giftItem) => (
                   <li>

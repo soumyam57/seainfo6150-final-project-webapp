@@ -72,7 +72,7 @@ function App() {
 
   }
   else{
-    displayWeddingItemsList=<div>You have no data!</div>;
+    displayWeddingItemsList=<div>Data is fetching!</div>;
   }
 
   return (
