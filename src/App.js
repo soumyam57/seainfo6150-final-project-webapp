@@ -29,7 +29,7 @@ function App() {
     const fetchData = async () => {
       // put data fetching code here!
         const response = await fetch( 
-          "http://demo5934733.mockable.io/"
+          "https://demo5934733.mockable.io/"
         );
         const responseJson = await response.json();
           //console.log("Response",responseJson);
