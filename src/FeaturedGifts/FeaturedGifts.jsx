@@ -18,7 +18,7 @@ const FeaturedGifts = () => {
                     </div>
                     <div className={styles.div}>
                         <img className={styles.image} src={photoframe} alt=""/>
-                        <Link className={styles.text} href="/wedding/photoholder">Couple Gifts Photo Holder</Link>
+                        <Link className={styles.text} to="/wedding/photoholder">Couple Gifts Photo Holder</Link>
                     </div>
                 </div>
             </div>

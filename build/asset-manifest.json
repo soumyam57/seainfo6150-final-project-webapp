@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/seainfo6150-final-project-webapp/static/css/main.45b450ec.chunk.css",
+    "main.js": "/seainfo6150-final-project-webapp/static/js/main.72aca73b.chunk.js",
+    "main.js.map": "/seainfo6150-final-project-webapp/static/js/main.72aca73b.chunk.js.map",
+    "runtime~main.js": "/seainfo6150-final-project-webapp/static/js/runtime~main.c4d7f5e8.js",
+    "runtime~main.js.map": "/seainfo6150-final-project-webapp/static/js/runtime~main.c4d7f5e8.js.map",
+    "static/js/2.ba2f432e.chunk.js": "/seainfo6150-final-project-webapp/static/js/2.ba2f432e.chunk.js",
+    "static/js/2.ba2f432e.chunk.js.map": "/seainfo6150-final-project-webapp/static/js/2.ba2f432e.chunk.js.map",
+    "index.html": "/seainfo6150-final-project-webapp/index.html",
+    "precache-manifest.3d81eb544afe8c460a366ad43f9129e0.js": "/seainfo6150-final-project-webapp/precache-manifest.3d81eb544afe8c460a366ad43f9129e0.js",
+    "service-worker.js": "/seainfo6150-final-project-webapp/service-worker.js",
+    "static/css/main.45b450ec.chunk.css.map": "/seainfo6150-final-project-webapp/static/css/main.45b450ec.chunk.css.map",
+    "static/media/Birthday.jpg": "/seainfo6150-final-project-webapp/static/media/Birthday.502b5419.jpg",
+    "static/media/christmas.jpg": "/seainfo6150-final-project-webapp/static/media/christmas.e9da3335.jpg",
+    "static/media/dolls.jpg": "/seainfo6150-final-project-webapp/static/media/dolls.a3555f85.jpg",
+    "static/media/getwell.jpg": "/seainfo6150-final-project-webapp/static/media/getwell.8141b3da.jpg",
+    "static/media/livetree.jpg": "/seainfo6150-final-project-webapp/static/media/livetree.16eaebeb.jpg",
+    "static/media/photoframe.jpg": "/seainfo6150-final-project-webapp/static/media/photoframe.099d5010.jpg",
+    "static/media/sm.jpg": "/seainfo6150-final-project-webapp/static/media/sm.d3da4439.jpg",
+    "static/media/wedding.jpg": "/seainfo6150-final-project-webapp/static/media/wedding.e97fc9bf.jpg"
+  }
+}
