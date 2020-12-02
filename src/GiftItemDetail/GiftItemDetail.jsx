@@ -14,7 +14,7 @@ const GiftItemDetail = (props) => {
     useEffect(() => {
         const fetchData = async () => {
           // put data fetching code here!
-          const result = await fetch("http://demo5934733.mockable.io/");
+          const result = await fetch("https://demo5934733.mockable.io/");
           const resultJson = await result.json();
           setFetchedData(resultJson);
         };
