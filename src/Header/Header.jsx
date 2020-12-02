@@ -1,26 +1,27 @@
 import React from 'react';
 import styles from "./Header.module.css";
 import "../ContactUs/ContactUs.jsx";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
         <header className={styles.flex}>
             <h1 className={styles.title}>Home of Gifts</h1> 
             <nav className={styles.container}>
-                <a className={styles.menuitem} href="/"> Home </a>
+                <Link className={styles.menuitem} to="/"> Home </Link>
                 <div className={styles.dropdown}>
                     <button className={styles.dropbutton}>Category
                     </button>
                     <div className={styles.item}>
-                        <a className={styles.li} href="/wedding">Wedding & Party</a>
-                        <a className={styles.li} href="/festival">Holidays & Festival</a>
-                        <a className={styles.li} href="/kids">Kids</a>
-                        <a className={styles.li} href="/birthday">Birthday</a>
-                        <a className={styles.li} href="/getwell">Get well soon</a>
+                        <Link className={styles.li} to="/wedding">Wedding & Party</Link>
+                        <Link className={styles.li} to="/festival">Holidays & Festival</Link>
+                        <Link className={styles.li} to="/kids">Kids</Link>
+                        <Link className={styles.li} to="/birthday">Birthday</Link>
+                        <Link className={styles.li} to="/getwell">Get well soon</Link>
                     </div>
                 </div>
-                <a className={styles.menuitem} href="/aboutme"> About Me </a>  
-                <a className={styles.menuitem} href="/feedback"> Feedback </a>  
+                <Link className={styles.menuitem} to="/aboutme">About Me</Link>
+                <Link className={styles.menuitem} to="/feedback">Feedback</Link>
             </nav>   
       </header>
     )
@@ -28,13 +29,4 @@ const Header = () => {
 
 export default Header;
 
-
-/*
-<ul className={styles.item}>
-                        <li><a className={styles.li} href="/wedding">Wedding & Party</a></li>
-                        <li><a className={styles.li} href="/festival">Holidays & Festival</a></li>
-                        <li><a className={styles.li} href="/kids">Kids</a></li>
-                        <li><a className={styles.li} href="/birthday">Birthday</a></li>
-                        <li><a className={styles.li} href="/getwell">Get well soon</a></li>
-                    </ul>*/
 
