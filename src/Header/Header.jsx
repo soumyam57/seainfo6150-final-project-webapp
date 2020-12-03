@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from "./Header.module.css";
-import "../ContactUs/ContactUs.jsx";
 import { Link } from "react-router-dom";
 
 const Header = () => {

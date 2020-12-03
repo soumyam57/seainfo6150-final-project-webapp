@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Aboutme component correctly 1`] = `
+<div>
+  <div
+    class="flex"
+  >
+    <div
+      class="grid"
+    >
+      <img
+        alt=""
+        class="image"
+        src="sm.jpg"
+      />
+      <div
+        class="div"
+      >
+        <h1>
+          About Me
+        </h1>
+        <br />
+        <br />
+        <p>
+          I am Soumya and I am delighted to meet you today
+        </p>
+        <br />
+        <p>
+          I hope you liked my website. This website was built using React, Javascript, HTML and CSS. This is Web Design project and the course is instructed by Prof. April Bingham and Teaching Assistant Xinxin
+        </p>
+        <br />
+        <p>
+          I would love to know your experience visiting my webiste. Click 
+          <a
+            class="text"
+            href="/feedback"
+          >
+            here
+          </a>
+           to provide your feedback
+        </p>
+        <br />
+        <br />
+        <h1>
+          Have Questions?
+        </h1>
+        <br />
+        <p>
+          You can reach me at 123-456-7890
+        </p>
+        <br />
+        <br />
+        <h2>
+          Thank you for stopping by, have a great day
+        </h2>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the header component correctly 1`] = `
+<div>
+  <header
+    class="flex"
+  >
+    <h1
+      class="title"
+    >
+      Home of Gifts
+    </h1>
+    <nav
+      class="container"
+    >
+      <a
+        class="menuitem"
+        href="/"
+      >
+         Home 
+      </a>
+      <div
+        class="dropdown"
+      >
+        <button
+          class="dropbutton"
+        >
+          Category
+        </button>
+        <div
+          class="item"
+        >
+          <a
+            class="li"
+            href="/wedding"
+          >
+            Wedding & Party
+          </a>
+          <a
+            class="li"
+            href="/festival"
+          >
+            Holidays & Festival
+          </a>
+          <a
+            class="li"
+            href="/kids"
+          >
+            Kids
+          </a>
+          <a
+            class="li"
+            href="/birthday"
+          >
+            Birthday
+          </a>
+          <a
+            class="li"
+            href="/getwell"
+          >
+            Get well soon
+          </a>
+        </div>
+      </div>
+      <a
+        class="menuitem"
+        href="/aboutme"
+      >
+        About Me
+      </a>
+      <a
+        class="menuitem"
+        href="/feedback"
+      >
+        Feedback
+      </a>
+    </nav>
+  </header>
+</div>
+`;

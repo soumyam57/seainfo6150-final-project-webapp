@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Feedback component correctly 1`] = `
+<div>
+  <div
+    class="grid"
+  >
+    <div>
+      <div
+        class="feedback"
+      >
+        <h2
+          class="h2"
+        >
+          Your opinions and suggestions are highly valuable. This way I can keep improving my website.
+        </h2>
+        <br />
+        <div>
+          <form
+            class="text"
+          >
+            <br />
+            How would you rate this website?
+            <br />
+            <br />
+            <input
+              id="1"
+              name="place"
+              type="radio"
+              value="1"
+            />
+            <label
+              for="1"
+            >
+              1 
+            </label>
+            <input
+              id="2"
+              name="place"
+              type="radio"
+              value="2"
+            />
+            <label
+              for="2"
+            >
+                2 
+            </label>
+            <input
+              id="3"
+              name="place"
+              type="radio"
+              value="3"
+            />
+            <label
+              for="3"
+            >
+                3 
+            </label>
+            <input
+              id="4"
+              name="place"
+              type="radio"
+              value="4"
+            />
+            <label
+              for="4"
+            >
+                4 
+            </label>
+            <input
+              id="5"
+              name="place"
+              type="radio"
+              value="5"
+            />
+            <label
+              for="5"
+            >
+                5 
+            </label>
+            <br />
+            <br />
+            <br />
+            <label
+              for="myTextId"
+            >
+              What did you love about the website? 
+            </label>
+            <br />
+            <input
+              class="textField"
+              id="text1"
+              name="text1"
+              required=""
+              type="text"
+            />
+            <br />
+            <br />
+            <label
+              for="myTextId"
+            >
+              Any suggestions for improving the website?
+            </label>
+            <br />
+            <input
+              class="textField"
+              id="text2"
+              name="text2"
+              type="text"
+            />
+            <br />
+            <br />
+            <label
+              for="myTextId"
+            >
+              Anything else you would like to share?
+            </label>
+            <br />
+            <input
+              class="textField"
+              id="text3"
+              name="text3"
+              type="text"
+            />
+            <br />
+            <br />
+            <input
+              class="button"
+              type="submit"
+              value="Submit"
+            />
+            <br />
+            <br />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

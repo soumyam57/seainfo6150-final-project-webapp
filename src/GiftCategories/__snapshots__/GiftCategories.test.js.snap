@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the GiftCategories component correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="flex"
+    >
+      <img
+        alt=""
+        class="image"
+        src="wedding.jpg"
+      />
+      <p
+        class="text"
+      >
+        <a
+          class="text"
+          href="/wedding"
+        >
+          Wedding & Party
+        </a>
+      </p>
+    </div>
+    <div
+      class="flex"
+    >
+      <img
+        alt=""
+        class="image"
+        src="christmas.jpg"
+      />
+      <p
+        class="text"
+      >
+        <a
+          class="text"
+          href="/festival"
+        >
+          Holidays & Festival
+        </a>
+      </p>
+    </div>
+    <div
+      class="flex"
+    >
+      <img
+        alt=""
+        class="image"
+        src="dolls.jpg"
+      />
+      <p
+        class="text"
+      >
+        <a
+          class="text"
+          href="/kids"
+        >
+          Kids
+        </a>
+      </p>
+    </div>
+    <div
+      class="flex"
+    >
+      <img
+        alt=""
+        class="image"
+        src="Birthday.jpg"
+      />
+      <p
+        class="text"
+      >
+        <a
+          class="text"
+          href="/birthday"
+        >
+          Birthday
+        </a>
+      </p>
+    </div>
+    <div
+      class="flex"
+    >
+      <img
+        alt=""
+        class="image"
+        src="getwell.jpg"
+      />
+      <p
+        class="text"
+      >
+        <a
+          class="text"
+          href="/getwell"
+        >
+          Get Well Soon
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;

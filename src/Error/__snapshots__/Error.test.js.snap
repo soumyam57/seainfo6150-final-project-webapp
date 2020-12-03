@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Error component correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="main"
+    >
+      <h1>
+        OOPS!!!
+      </h1>
+      <h2>
+        404
+      </h2>
+      <h4>
+        I am sorry, the page you requested could not be found
+      </h4>
+      <a
+        class="link"
+        href="/"
+      >
+        Go back to Homepage
+      </a>
+    </div>
+  </div>
+</div>
+`;

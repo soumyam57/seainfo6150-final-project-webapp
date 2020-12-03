@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the BooksListItemImage component correctly 1`] = `
+<div>
+  <div>
+    <img
+      alt=""
+      class="image"
+      src="https://images-na.ssl-images-amazon.com/images/I/61aaipDiGcL._AC_SL1200_.jpg"
+    />
+  </div>
+</div>
+`;

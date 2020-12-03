@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the FeaturedGifts component correctly 1`] = `
+<div>
+  <div>
+    <h1
+      class="title"
+    >
+      Popular Today
+    </h1>
+    <div
+      class="container"
+    >
+      <div
+        class="grid"
+      >
+        <div
+          class="div"
+        >
+          <img
+            alt=""
+            class="image"
+            src="livetree.jpg"
+          />
+          <a
+            class="text"
+            href="/festival/livetree"
+          >
+            Christmas Reindeer Live Tree
+          </a>
+        </div>
+        <div
+          class="div"
+        >
+          <img
+            alt=""
+            class="image"
+            src="photoframe.jpg"
+          />
+          <a
+            class="text"
+            href="/wedding/photoholder"
+          >
+            Couple Gifts Photo Holder
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

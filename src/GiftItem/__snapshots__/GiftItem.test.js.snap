@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the home component correctly 1`] = `
+<div>
+  <div
+    class="giftItem"
+  >
+    <p
+      class="text"
+    >
+      Couple Rings
+    </p>
+    <div>
+      <img
+        alt=""
+        class="image"
+        src="https://images-na.ssl-images-amazon.com/images/I/51mfwq0NDEL._AC_UX522_.jpg"
+      />
+    </div>
+    <p
+      class="text"
+    >
+      Price: 
+      $1000
+    </p>
+  </div>
+</div>
+`;

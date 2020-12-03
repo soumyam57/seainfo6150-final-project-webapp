@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the GiftDetailCoverImage component correctly 1`] = `
+<div>
+  <img
+    alt=""
+    class="image"
+    src="https://images-na.ssl-images-amazon.com/images/I/51mfwq0NDEL._AC_UX522_.jpg"
+  />
+</div>
+`;
