@@ -13,6 +13,10 @@
     font-family: 'Lora', serif;
   }
 
+  .reviewtext{
+    color: rgb(182, 104, 104);
+  }
+
   .details {
     width: 100%;
     background-color: rgb(243, 222, 222);

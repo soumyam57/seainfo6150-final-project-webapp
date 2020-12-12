@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import styles from "./Form.module.css";
 import { Link } from "react-router-dom";
-import { useForm } from "react-hook-form";
+
 
 const Form = () => {
   const [submittedForm, setSubmittedForm] = useState();
-  const { handleSubmit, register, errors } = useForm();
   function onSubmit(e) {
     e.preventDefault();
     const data = new FormData(e.target);
@@ -13,23 +12,23 @@ const Form = () => {
   };
 
   return (
-    <div classname={styles.formStyle}>
+    <div>
       <div>
       {
         submittedForm ? (
           <div className={styles.text}>
-            <h2 className={styles.text}>Please review your shipping details below</h2>
-            Your First name: <b>{submittedForm.get("myFirstName")}</b>.<br />
-            Your Last Name: <b>{submittedForm.get("myLastName")}</b>.<br />
-            Your email ID: <b>{submittedForm.get("myEmailID")}</b>.<br />
-            Your Phone Number:<b>{submittedForm.get("myPhone")}</b>.<br />
-            Shipping Address Line 1: <b>{submittedForm.get("myAddressLine1")}</b>.<br />
-            Shipping Address Line 2: <b>{submittedForm.get("myAddressLine2")}</b>.<br />
-            City of the Shipping Address: <b>{submittedForm.get("myCity")}</b>.<br />
-            State of the Shipping Address:<b>{submittedForm.get("myState")}</b>.<br />
+            <h2 className={styles.text}>Please review your shipping details below</h2><br />
+            Your First name: <b className={styles.reviewtext}>{submittedForm.get("myFirstName")}</b>.<br /><br />
+            Your Last Name: <b className={styles.reviewtext}>{submittedForm.get("myLastName")}</b>.<br /><br />
+            Your email ID: <b className={styles.reviewtext}>{submittedForm.get("myEmailID")}</b>.<br /><br />
+            Your Phone Number:<b className={styles.reviewtext}>{submittedForm.get("myPhone")}</b>.<br /><br />
+            Shipping Address Line 1: <b className={styles.reviewtext}>{submittedForm.get("myAddressLine1")}</b>.<br /><br />
+            Shipping Address Line 2: <b className={styles.reviewtext}>{submittedForm.get("myAddressLine2")}</b>.<br /><br />
+            City of the Shipping Address: <b className={styles.reviewtext}>{submittedForm.get("myCity")}</b>.<br /><br />
+            State of the Shipping Address:<b className={styles.reviewtext}>{submittedForm.get("myState")}</b>.<br /><br />
             
             <Link to="/thankyou"> 
-            <button type="button">Submit</button><br /><br />
+            <button className={styles.button} type="button">Submit</button><br /><br />
             </Link>
           </div>
         ) : (
@@ -45,13 +44,13 @@ const Form = () => {
             <input className={styles.space} type="email" name="myEmailID" id="myEmailID" placeholder="sou@example.com" required/><br /><br />
 
             <label htmlFor="myTextId">Your Phone No : </label><br />
-            <input className={styles.space} type="tel" name="myPhone" id="myPhone" minLength="9" maxlength="10" required/><br /><br />
+            <input className={styles.space} type="tel" name="myPhone" id="myPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder= "123-345-6785" required/><br /><br />
 
             <label htmlFor="myTextId">Address Line 1 (required, 500 characters max): </label>
-            <input  type="text" name="myAddressLine1" id="myAddressLine1" className={styles.details} maxlength="500" required/><br /><br />
+            <input  type="text" name="myAddressLine1" id="myAddressLine1" className={styles.details} maxLength="500" required/><br /><br />
 
             <label htmlFor="myTextId">Address Line 2 (500 characters max): </label>
-            <input type="text" name="myAddressLine2" id="myAddressLine2" className={styles.details} maxlength="500"/><br /><br />
+            <input type="text" name="myAddressLine2" id="myAddressLine2" className={styles.details} maxLength="500"/><br /><br />
 
             <label htmlFor="myTextId">City where the address is located :  </label>
             <select className={styles.dropdown} name="myCity" id="myCity">

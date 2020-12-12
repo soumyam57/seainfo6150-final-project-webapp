@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import { useRouteMatch } from "react-router-dom";
 import styles from "./GiftItem.module.css";
 import GiftItemImage from '../GiftItemImage/GiftItemImage';
 

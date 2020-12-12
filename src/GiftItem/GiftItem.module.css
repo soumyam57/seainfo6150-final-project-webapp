@@ -25,31 +25,5 @@
     text-align: center;
 }
 
-  
-  @media screen and (min-width: 525px) {
-    .giftItem {
-      padding: 1%;
-    }
-    .title {
-      font-size: 1.5em;
-    }
-  }
-  
-  @media screen and (min-width: 800px) {
-    .giftItem {
-      padding: 1%;
-    }
-    .title {
-      font-size: 1em;
-    }
-  }
-  
-  @media screen and (min-width: 1150px) {
-    .giftItem {
-      padding: 1%;
-    }
-    .title {
-      font-size: 0.8em;
-    }
-  }
+
   

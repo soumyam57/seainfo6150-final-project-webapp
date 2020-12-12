@@ -9,7 +9,8 @@ const Header = () => {
             <nav className={styles.container}>
                 <Link className={styles.menuitem} to="/"> Home </Link>
                 <div className={styles.dropdown}>
-                    <button className={styles.dropbutton}>Category
+                    <button className={styles.dropbutton}>
+                        Category<i className="fa fa-caret-down"></i>
                     </button>
                     <div className={styles.item}>
                         <Link className={styles.li} to="/wedding">Wedding & Party</Link>

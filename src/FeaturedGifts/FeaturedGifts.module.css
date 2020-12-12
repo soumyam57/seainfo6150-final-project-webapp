@@ -12,7 +12,7 @@
   padding: 2%;
   border-radius: 2%;
   width: 86%;
-  height:300px;
+  height:320px;
   margin: 1.5%;
   align-items: center;
   justify-content: center;
@@ -28,23 +28,25 @@
 }
 
 .grid{
-  padding: 2%;
-  padding-top: 2%;
+  padding-top: 4%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
 
-@media screen and (min-width: 600px) {
-  .flex{
-    flex-direction: column;
+@media screen and (min-width: 200px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 5%;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .flex{
-    flex-direction: row;
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 1%;
   }
 }
+
 
 .text {
   padding-top: 2%;

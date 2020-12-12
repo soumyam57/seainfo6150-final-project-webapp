@@ -1,5 +1,5 @@
 import React, {useEffect, useState}  from "react";
-import { BrowserRouter as Router, Switch, Route, Link, HashRouter } from "react-router-dom";
+import {Switch, Route, HashRouter } from "react-router-dom";
 import Home from './Home/Home';
 import styles from "./App.module.css";
 import { isEmpty } from "lodash";

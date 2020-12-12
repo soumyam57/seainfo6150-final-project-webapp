@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "./Feedback.module.css";
-import { Link } from "react-router-dom";
 
 const Feedback = () => {
   const [submittedForm, setSubmittedForm] = useState();
