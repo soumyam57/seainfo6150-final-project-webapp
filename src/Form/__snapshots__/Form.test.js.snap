@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Feedback component correctly 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        class="formdetails"
+      >
+        <form
+          class="text"
+        >
+          <br />
+          <label
+            for="name"
+          >
+            Your First Name: 
+          </label>
+          <br />
+          <input
+            class="space"
+            id="myFirstName"
+            name="myFirstName"
+            required=""
+            type="text"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Your Last Name:  
+          </label>
+          <br />
+          <input
+            class="space"
+            id="myLastName"
+            name="myLastName"
+            required=""
+            type="text"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Your Email ID :  
+          </label>
+          <br />
+          <input
+            class="space"
+            id="myEmailID"
+            name="myEmailID"
+            placeholder="sou@example.com"
+            required=""
+            type="email"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Your Phone No : 
+          </label>
+          <br />
+          <input
+            class="space"
+            id="myPhone"
+            name="myPhone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="123-345-6785"
+            required=""
+            type="tel"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Address Line 1 (required, 500 characters max): 
+          </label>
+          <input
+            class="details"
+            id="myAddressLine1"
+            maxlength="500"
+            name="myAddressLine1"
+            required=""
+            type="text"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            Address Line 2 (500 characters max): 
+          </label>
+          <input
+            class="details"
+            id="myAddressLine2"
+            maxlength="500"
+            name="myAddressLine2"
+            type="text"
+          />
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            City where the address is located :  
+          </label>
+          <select
+            class="dropdown"
+            id="myCity"
+            name="myCity"
+          >
+            <option
+              value="San Francisco"
+            >
+              San Francisco
+            </option>
+            <option
+              value="Boston"
+            >
+              Boston
+            </option>
+            <option
+              value="Seattle"
+            >
+              Seattle
+            </option>
+            <option
+              value="Charlotte"
+            >
+              Charlotte
+            </option>
+          </select>
+          <br />
+          <br />
+          <label
+            for="myTextId"
+          >
+            State where the address is located:  
+          </label>
+          <select
+            class="dropdown"
+            id="myState"
+            name="myState"
+          >
+            <option
+              value="CA"
+            >
+              California
+            </option>
+            <option
+              value="MA"
+            >
+              Massachusetts
+            </option>
+            <option
+              value="WA"
+            >
+              Washington
+            </option>
+            <option
+              value="NC"
+            >
+              North Carolina
+            </option>
+          </select>
+          <br />
+          <br />
+          <input
+            class="button"
+            type="submit"
+            value="Checkout"
+          />
+          <br />
+          <br />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

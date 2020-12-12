@@ -5,8 +5,6 @@ import styles from "./GiftItemDetail.module.css";
 import Form from '../Form/Form';
 import GiftDetailCoverImage from '../GiftDetailCoverImage/GiftDetailCoverImage.jsx';
 import GiftDetailDescription from '../GiftDetailDescription/GiftDetailDescription.jsx'
- 
-//<img src={gift.img.url} alt=""/>
 
 const GiftItemDetail = (props) => {
     const [fetchedData, setFetchedData] = useState({});
@@ -23,13 +21,10 @@ const GiftItemDetail = (props) => {
           fetchData();
         }
     }, [fetchedData]);  
-    
-    console.log(fetchedData)
 
     let displayContent;
     if(!isEmpty(fetchedData)) {
         var gift = fetchedData[props.category][props.categoryid];
-        console.log("display=",gift)
         displayContent = (
         <div className={styles.mainpage}>
             <h1 className={styles.text}>{gift.title}</h1>

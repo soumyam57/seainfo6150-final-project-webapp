@@ -25,5 +25,6 @@ it("renders the GiftDetailDescription component correctly", () => {
         <GiftDetailDescription
             detail={giftdetails}
         />
-    )
+    );
+    expect(container).toMatchSnapshot();
 });

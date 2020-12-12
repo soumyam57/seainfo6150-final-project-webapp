@@ -26,6 +26,9 @@ exports[`renders the header component correctly 1`] = `
           class="dropbutton"
         >
           Category
+          <i
+            class="fa fa-caret-down"
+          />
         </button>
         <div
           class="item"

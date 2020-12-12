@@ -1,55 +1,153 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the home component correctly 1`] = `
+exports[`renders the Home component correctly 1`] = `
 <div>
-  <div>
-    The home page
-    <img
-      alt="tree frog"
-      src="/images/treefrog.jpg"
-    />
+  <div
+    class="homepage"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="flex"
+      >
+        <img
+          alt=""
+          class="image"
+          src="wedding.jpg"
+        />
+        <p
+          class="text"
+        >
+          <a
+            class="text"
+            href="/wedding"
+          >
+            Wedding & Party
+          </a>
+        </p>
+      </div>
+      <div
+        class="flex"
+      >
+        <img
+          alt=""
+          class="image"
+          src="christmas.jpg"
+        />
+        <p
+          class="text"
+        >
+          <a
+            class="text"
+            href="/festival"
+          >
+            Holidays & Festival
+          </a>
+        </p>
+      </div>
+      <div
+        class="flex"
+      >
+        <img
+          alt=""
+          class="image"
+          src="dolls.jpg"
+        />
+        <p
+          class="text"
+        >
+          <a
+            class="text"
+            href="/kids"
+          >
+            Kids
+          </a>
+        </p>
+      </div>
+      <div
+        class="flex"
+      >
+        <img
+          alt=""
+          class="image"
+          src="Birthday.jpg"
+        />
+        <p
+          class="text"
+        >
+          <a
+            class="text"
+            href="/birthday"
+          >
+            Birthday
+          </a>
+        </p>
+      </div>
+      <div
+        class="flex"
+      >
+        <img
+          alt=""
+          class="image"
+          src="getwell.jpg"
+        />
+        <p
+          class="text"
+        >
+          <a
+            class="text"
+            href="/getwell"
+          >
+            Get Well Soon
+          </a>
+        </p>
+      </div>
+    </div>
     <div>
-      <form>
-        <label
-          for="myTextId"
+      <h1
+        class="title"
+      >
+        Popular Today
+      </h1>
+      <div
+        class="container"
+      >
+        <div
+          class="grid"
         >
-          Input
-        </label>
-        <input
-          id="myTextId"
-          name="myText"
-          type="text"
-        />
-        <label
-          for="myDropdownId"
-        >
-          Input
-        </label>
-        <select
-          id="myDropdownId"
-          name="myDropdown"
-        >
-          <option
-            value="foo"
+          <div
+            class="div"
           >
-            Foo
-          </option>
-          <option
-            value="bar"
+            <img
+              alt=""
+              class="image"
+              src="livetree.jpg"
+            />
+            <a
+              class="text"
+              href="/festival/livetree"
+            >
+              Christmas Reindeer Live Tree
+            </a>
+          </div>
+          <div
+            class="div"
           >
-            Bar
-          </option>
-          <option
-            value="baz"
-          >
-            Baz
-          </option>
-        </select>
-        <input
-          type="submit"
-          value="Send it"
-        />
-      </form>
+            <img
+              alt=""
+              class="image"
+              src="photoframe.jpg"
+            />
+            <a
+              class="text"
+              href="/wedding/photoholder"
+            >
+              Couple Gifts Photo Holder
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the GiftDetailDescription component correctly 1`] = `
+<div>
+  <div
+    class="description"
+  >
+    <p
+      class="title"
+    >
+      Price: 
+      $1000
+    </p>
+    <br />
+    <p
+      class="title"
+    >
+      Status: 
+      In Stock
+    </p>
+    <br />
+    <p>
+      Category: 
+      wedding
+    </p>
+    <br />
+    <p>
+      Category Name: 
+      couplerings
+    </p>
+    <br />
+    <p>
+      Short Description: 
+      CHuir Wedding Couple Rings for Him and Her, Adjustable Celtic Knot Promise Ring Set
+    </p>
+    <br />
+    <p>
+      Description: 
+      MATERIALS Made of 30% Silver Alloy, White Gold Plating, AAA Grade Cubic Zirconia Stone RINGS SIZE
+      Adjustable design, and don't worry about the size. Adjustable size range (US size) : Women: 4-8, Men: 5-10. Gift for her and him or yourself
+      PACKAGE INCLUDES 1 x Pair of Couple Ring Set (one for Her, the other for Him) in a simple pakage
+    </p>
+    <br />
+  </div>
+</div>
+`;
